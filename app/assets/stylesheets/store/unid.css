@@ -1,0 +1,9 @@
+#logo a:before{
+	content:"Uniform Direct";
+	padding-top:40px;
+	font-size:40px;
+	line-height:2;}
+#logo a:after{content:""}
+#logo a img{
+	display:none;
+}
