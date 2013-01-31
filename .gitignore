@@ -16,4 +16,5 @@
 .rvmrc
 
 /config/database.yml
-/public/spree/*
+/public/spree
+/doc
