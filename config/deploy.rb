@@ -38,7 +38,7 @@ namespace :deploy do
 	task :setup_config, roles: :app do
 		sudo "ln -nfs #{current_path}/config/apache.conf /etc/apache2/sites-available/#{application}"
 		run "mkdir -p #{shared_path}/config"
-		put File.read("config/database.example.yml"), "#{shared_path}/config/database.yml"
+		put File.read("config/database.sample.yml"), "#{shared_path}/config/database.yml"
 		puts "Now edit config files in #{shared_path}"
 	end
 	after "deploy:setup", "deploy:setup_config"
