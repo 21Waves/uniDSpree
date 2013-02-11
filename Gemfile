@@ -20,7 +20,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 2.1.4'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -40,3 +40,7 @@ gem 'spree', '~> 1.3.1'
 # gem 'spree_usa_epay'
 gem 'spree_skrill'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-stable'
+
+group :development, :test do
+	gem 'rspec-rails'
+end
